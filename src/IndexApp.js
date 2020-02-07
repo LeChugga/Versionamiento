@@ -1,16 +1,10 @@
-import { createAppContainer  } from "react-navigation";
-import { createDrawerNavigator } from "react-navigation-drawer";
-import {Home, Configuration  } from "./Pages/Auth";
+import React, {Component} from 'react';
+import DrawerNavigator from './DrawerNavigation';
 
-const MyDrawerNavigation = createDrawerNavigator({
-    home:{
-        screen: Home,
-    },
-    Configuration : {
-        screen : Configuration,
-        
-    }
-    
-});
-const IndexApp = createAppContainer(MyDrawerNavigation);
-export default IndexApp
+export default class App extends Component {
+  render() {
+    return (
+      <DrawerNavigator />
+    );
+  }
+}
