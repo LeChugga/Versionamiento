@@ -16,7 +16,7 @@ const MyDrawerNavigation = createDrawerNavigator({
 },
     {
         initialRouteName: "home",
-        drawerWidth: Dimensions.get("window").width,
+        drawerWidth: Dimensions.get("window").width ,
         drawerPosition: "left",
         drawerBackgroundColor: "transparent",
         contentComponent: ContentComponent

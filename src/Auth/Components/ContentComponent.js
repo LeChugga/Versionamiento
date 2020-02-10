@@ -7,37 +7,152 @@ import {
     TouchableOpacity,
     Image,
     ScrollView,
-    ImageBackground
+    ImageBackground,
+    Dimensions,
+    Alert,
+    Touchable
 } from "react-native";
+import axios from "axios";
+import { connect } from "react-redux";
+import {ApiConfig} from "../../Api";
+
 
 
 import Icon from "react-native-vector-icons/FontAwesome"
 
 
-export default class ContentComponent extends Component {
+
+class ContentComponent extends Component {
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            view: [],
+            success: false,
+        }
+    }
+
+
+
+    componentDidMount() {
+        axios.get(`http://192.168.1.12/AnimePelis/categorias.php`)
+            .then(res => {
+                const view = res.data;
+                this.setState({ view, success: true });
+               
+            }).catch(err => {
+               
+            })
+
+            
+    }
+
+    UNSAFE_componentWillMount(){
+       console.log(this.props.config);
+    }
+
+    _getView = () => {
+        if (this.state.success) {
+            const LIST = this.state.view;
+
+            return LIST.map((item, index) => {
+                return (
+
+
+                    <TouchableOpacity  onPress={() => this.props.navigation.navigate("home")}>
+                        <View style={styles.row}>
+                            <Icon
+                                name={"film"}
+                                size={25}
+                                color={"#000"}
+                            />
+                            <Text style={styles.text}>{item[1]}</Text>
+                            <Icon style={{ left: 20 }}
+                                name={"angle-right"}
+                                size={30}
+                                color={"#000"}
+                            />
+                        </View>
+                    </TouchableOpacity>
+
+
+
+                )
+            })
+
+        } else {
+            return (
+                <View>
+                    <Text>Error  Conexion</Text>
+                </View>
+
+            )
+        }
+    }
+
     render() {
         return (
 
             <TouchableOpacity activeOpacity={1} style={styles.drawerTransparent}>
                 <TouchableOpacity activeOpacity={1} style={styles.drawer}>
-                    <ScrollView>
-                        <View >
-                            <ImageBackground source={require("../assets/img/fondoAnime.jpg")} style={{width:"100%", height:"100%"}} style={styles.header}>
-                                <Image source={require("../assets/img/user.png")} style={styles.headerImage} />
+                    <View >
+                        <ImageBackground source={require("../assets/img/fondoAnime.jpg")} style={{ width: "100%", height: "100%" }} style={styles.header}>
+                            <Image source={require("../assets/img/user.png")} style={styles.headerImage} />
+
+                            <View style={{ flexDirection: "row" }}>
                                 <Text style={styles.textPerfil}>Mi Perfil</Text>
-                            </ImageBackground>
+                                <Icon style={{ left: 75, top: 13 }}
+                                    name={"gear"}
+                                    size={20}
+                                    color="#fff"
+                                    onPress={() => Alert.alert("Esta va a hacer la configuracion")}
+                                />
+                                <Icon style={{ right: 160, top: 13 }}
+                                    name={"share"}
+                                    size={20}
+                                    color={"#fff"}
+                                    onPress={() => Alert.alert("Aqui se compartira la aplicacion")}
+                                />
+                            </View>
+                        </ImageBackground>
+                        <View>
 
                         </View>
+
+                    </View>
+                    <ScrollView>
                         <TouchableHighlight underlayColor={'rgba(0,0,0,0,2)'} onPress={() => this.props.navigation.navigate("Configuration")}>
                             <View style={styles.row}>
                                 <Icon
-                                    name={"download"}
+                                    name={"film"}
                                     size={25}
                                     color={"#000"}
                                 />
                                 <Text style={styles.text}>Descargas</Text>
+                                <Icon style={{ left: 20 }}
+                                    name={"angle-right"}
+                                    size={30}
+                                    color={"#000"}
+                                />
                             </View>
                         </TouchableHighlight>
+                        <TouchableOpacity underlayColor={'rgba(0,0,0,0,2)'} onPress={() => this.props.navigation.navigate("home")}>
+                            <View style={styles.row}>
+                                <Icon
+                                    name={"film"}
+                                    size={25}
+                                    color={"#000"}
+                                />
+                                <Text style={styles.text}>Home</Text>
+                                <Icon style={{ left: 20 }}
+                                    name={"angle-right"}
+                                    size={30}
+                                    color={"#000"}
+                                />
+                            </View>
+                        </TouchableOpacity>
+                        {this._getView()}
+
                     </ScrollView>
                 </TouchableOpacity>
             </TouchableOpacity>
@@ -52,7 +167,7 @@ const styles = StyleSheet.create({
     },
     drawer: {
         flex: 1,
-        width: 350,
+        width: 250,
         backgroundColor: "#fff"
     },
     header: {
@@ -89,11 +204,18 @@ const styles = StyleSheet.create({
         backgroundColor: "gray",
         margin: 15
     },
-    textPerfil:{
+    textPerfil: {
         fontSize: 20,
-        fontWeight:"bold",
-        marginLeft:15,
-        color:"#fff"
+        fontWeight: "bold",
+        marginLeft: 15,
+        color: "#fff"
     }
 
 })
+
+const mapStateToProps = state => ({
+
+    config: state.config
+  
+  });
+export default connect(mapStateToProps)(ContentComponent)
