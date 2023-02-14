@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Help</title>
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700|Roboto:400,700&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+  <link href="css/style.breadcrumb.css" rel="stylesheet" />
+  <link rel="icon" href="images/logo.png" type="images/x-icon">
+</head>
+
+<body class="sub_page">
+  <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="">
+            <span>
+              UTCJ
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex  flex-column flex-lg-row align-items-center w-100 justify-content-between">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="buzon.html"> Mailbox </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="ayuda.html"> Help </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contactanos.html"> Contact us </a>
+                </li>
+				<li class="nav-item">
+                  <a class="nav-link" href="errorpage.html"> Error page </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="inicio_sesion.html"> Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="registro.html">Register</a>
+                </li>
+              </ul>
+              <form class="form-inline ">
+                <input type="search" placeholder="Search" maxlength="15" >
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+              </form>
+            </div>
+          </div>
+	
+        </nav>
+		<ul class="breadcrumb" style="padding-top:90px;">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="ayuda.html">Help</a></li>
+		</ul>
+	  </div>
+    </header>
+  </div>
+  <section class="health_section layout_padding">
+    <div class="health_carousel-container">
+      <h2 class="text-uppercase">
+        Subjects
+      </h2>
+      <div class="carousel-wrap layout_padding2">
+        <div class="owl-carousel">
+          <div class="item">
+            <div class="box">
+              <div class="btn_container">
+                <a href="">
+                  Choose
+                </a>
+              </div>
+              <div class="img-box">
+                <img src="images/toro.png" alt="">
+              </div>
+            </div>
+            <div class="box">
+              <div class="btn_container">
+                <a href="">
+                  Choose
+                </a>
+              </div>
+              <div class="img-box">
+                <img src="images/toro.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="btn_container">
+                <a href="">
+                  Choose
+                </a>
+              </div>
+              <div class="img-box">
+                <img src="images/toro.png" alt="">
+              </div>
+            </div>
+            <div class="box">
+              <div class="btn_container">
+                <a href="">
+                  Choose
+                </a>
+              </div>
+              <div class="img-box">
+                <img src="images/toro.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="btn_container">
+                <a href="">
+                  Choose
+                </a>
+              </div>
+              <div class="img-box">
+                <img src="images/toro.png" alt="">
+              </div>
+            </div>
+            <div class="box">
+              <div class="btn_container">
+                <a href="">
+                  Choose
+                </a>
+              </div>
+              <div class="img-box">
+                <img src="images/toro.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="btn_container">
+                <a href="">
+                  Choose
+                </a>
+              </div>
+              <div class="img-box">
+                <img src="images/toro.png" alt="">
+              </div>
+            </div>
+            <div class="box">
+              <div class="btn_container">
+                <a href="">
+                  Choose
+                </a>
+              </div>
+              <div class="img-box">
+                <img src="images/toro.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="health_carousel-container">
+      <h2 class="text-uppercase">
+        Careers
+
+
+      </h2>
+      <div class="carousel-wrap layout_padding2">
+        <div class="owl-carousel owl-2">
+          <div class="item">
+            <div class="box">
+              <div class="btn_container">
+                <a href="">
+                  Elige
+                </a>
+              </div>
+              <div class="img-box">
+                <img src="images/logo.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="btn_container">
+                <a href="">
+                  Elige
+                </a>
+              </div>
+              <div class="img-box">
+                <img src="images/logo.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="btn_container">
+                <a href="">
+                  Elige
+                </a>
+              </div>
+              <div class="img-box">
+                <img src="images/logo.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="btn_container">
+                <a href="">
+                  Elige
+                </a>
+              </div>
+              <div class="img-box">
+                <img src="images/logo.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center">
+      <a href="">
+        See more
+      </a>
+    </div>
+	<!-- API -->
+	
+	<center><div id="paypal-button-container"></div>
+    <script src="https://www.paypal.com/sdk/js?client-id=test&currency=USD"></script>
+
+    <script>
+        // Render the PayPal button into #paypal-button-container
+        paypal.Buttons({
+
+            // Set up the transaction
+            createOrder: function(data, actions) {
+                return actions.order.create({
+                    purchase_units: [{
+                        amount: {
+                            value: '88.44'
+                        }
+                    }]
+                });
+            },
+
+            // Finalize the transaction
+            onApprove: function(data, actions) {
+                return actions.order.capture().then(function(orderData) {
+                    // Successful capture! For demo purposes:
+                    console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+                    var transaction = orderData.purchase_units[0].payments.captures[0];
+                    alert('Transaction '+ transaction.status + ': ' + transaction.id + '\n\nSee console for all available details');
+
+                    // Replace the above to show a success message within this page, e.g.
+                    // const element = document.getElementById('paypal-button-container');
+                    // element.innerHTML = '';
+                    // element.innerHTML = '<h3>Thank you for your payment!</h3>';
+                    // Or go to another URL:  actions.redirect('thank_you.html');
+                });
+            }
+
+
+        }).render('#paypal-button-container');
+    </script>
+  </section>
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="info_contact">
+            <h4>
+              Contact
+            </h4>
+            <div class="box">
+              <div class="img-box">
+                <img src="images/telephone-symbol-button.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h6>
+                  +01 123567894
+                </h6>
+              </div>
+            </div>
+            <div class="box">
+              <div class="img-box">
+                <img src="images/email.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h6>
+                  al22120254@utcj.edu.mx
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_menu">
+            <h4>
+              Menu
+            </h4>
+            <ul class="navbar-nav  ">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ayuda.html"> Help </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="buzon.html"> Mailbox </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="errorpage.html"> Error page </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="info_news">
+            <h4>
+              Register
+            </h4>
+            <form action="">
+              <input type="text" maxlength="10" placeholder="Write your email">
+              <div class="d-flex justify-content-center justify-content-end mt-3">
+                <button>
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div></center>
+  </section>
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js">
+  </script>
+  <script type="text/javascript">
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      navText: [],
+      autoplay: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 4
+        }
+      }
+    });
+  </script>
+  <script type="text/javascript">
+    $(".owl-2").owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      navText: [],
+      autoplay: true,
+
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 4
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>
