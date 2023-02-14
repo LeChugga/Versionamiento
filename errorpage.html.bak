@@ -10,5 +10,5 @@
     <div class="err">4</div>
     <i class="far fa-question-circle fa-spin"></i>
     <div class="err2">4</div>
-    <div class="msg">Maybe this page was moved? It was deleted? Is he hiding in quarantine? Did it never exist in the first place?<p>Go to<a href="index.html"> home</a> and try again.</p></div>
+    <div class="msg">Maybe this page was moved? It was deleted? Is he hiding in quarantine? Did it never exist in the first place?<p>Go<a href="index.html"> home</a> and try again.</p></div>
 </div>
