@@ -188,7 +188,7 @@
               <input type="text" maxlength="10" placeholder="Write your email">
               <div class="d-flex justify-content-center justify-content-end mt-3">
                 <button>
-                  Subscribe
+                  Subscribex
                 </button>
               </div>
             </form>
